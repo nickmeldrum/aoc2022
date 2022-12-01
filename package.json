@@ -1,0 +1,12 @@
+{
+  "name": "aoc2022",
+  "version": "1.0.0",
+  "author": "Meldrum, Nick <nick@nickmeldrum.com>",
+  "license": "MIT",
+  "scripts": {
+    "day1": "nodemon day1-calorie-counting/index.mjs"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

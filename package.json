@@ -5,7 +5,15 @@
   "license": "MIT",
   "scripts": {
     "day1": "nodemon day1-calorie-counting/index.mjs",
-    "day2": "nodemon day2/index.mjs"
+    "day2": "nodemon day2/index.mjs",
+    "day3": "nodemon day3/index.mjs",
+    "day4": "nodemon day4/index.mjs",
+    "day5": "nodemon day5/index.mjs",
+    "day6": "nodemon day6/index.mjs",
+    "day7": "nodemon day7/index.mjs",
+    "day8": "nodemon day8/index.mjs",
+    "day9": "nodemon day9/index.mjs",
+    "day10": "nodemon day10/index.mjs"
   },
   "dependencies": {
     "nodemon": "^2.0.20"

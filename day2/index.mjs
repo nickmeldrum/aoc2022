@@ -1,4 +1,9 @@
-import fs from 'fs/promises'
+import {
+  readInput,
+  numberFromCurrentModule,
+  parseLinesToArray,
+  parseSpacedToArrayInAllLines,
+} from '../utils/general.mjs'
 
 const choice = {
   'X': 1, // Rock
@@ -77,16 +82,11 @@ const part2 = (data) => {
   console.log(`part2: score = ${total}`)
 }
 
-const parse = (data) => {
-  const split = data.split('\n')
-  split.length = split.length - 1
-  return split.map(l => l.split(' '))
-}
-
 const runItAll = async () => {
   try {
-    const data = await fs.readFile('./day2/input', { encoding: 'utf8' })
-    const parsed = parse(data)
+    const day = numberFromCurrentModule(import.meta.url)
+    const data = await readInput(day)
+    const parsed = parseSpacedToArrayInAllLines(parseLinesToArray(data))
     part1(parsed)
     part2(parsed)
   } catch (err) {

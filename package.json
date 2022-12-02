@@ -4,7 +4,8 @@
   "author": "Meldrum, Nick <nick@nickmeldrum.com>",
   "license": "MIT",
   "scripts": {
-    "day1": "nodemon day1-calorie-counting/index.mjs"
+    "day1": "nodemon day1-calorie-counting/index.mjs",
+    "day2": "nodemon day2/index.mjs"
   },
   "dependencies": {
     "nodemon": "^2.0.20"
